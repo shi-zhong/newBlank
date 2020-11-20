@@ -1,0 +1,90 @@
+<div id="back"></div>
+<div id="sidebar">
+  <div>
+    <div class="imgheader">背景图片选择
+      <div id="addbgi"></div>
+      <div id="posi-switch">
+        <div id="left-part">L</div>
+        <div id="right-part">R</div>
+        <div id="switch-part"></div>
+      </div>
+    </div>
+    <div id="bgi-con"></div>
+  </div>
+  <div id="addbgicon">
+    <input type="text" tabindex="-1">
+    <div id="imgpush">
+      <img src="./assets/web/icon/sure.png" alt="">
+    </div>
+  </div>
+  <div id="test">×</div>
+</div>
+<!-- 点击效果 -->
+<div class="canvas"><canvas id="canvas"></canvas></div>
+<!-- 主体部分 -->
+<div class="container">
+
+</div>
+<div id="addcon" hidden>
+  <div id="addheader">
+    添加新的网址
+  </div>
+  <button id="addclX"></button>
+  <div id="add-inputs">
+    <div class="add-incon"><input type="text" class="addinp" placeholder="名称" maxlength="6" /></div>
+    <div class="add-incon"><input type="text" class="addinp" placeholder="网址" /></div>
+    <div class="add-incon"><input type="text" class="addinp" placeholder="图标(选填)" /></div>
+    <div class="add-incon"><input type="number" class="addinp" placeholder="大小(美观性用、选填)" min="60" max="100"
+        maxlength="3" /></div>
+  </div>
+  <div id="add-confirm">确定</div>
+</div>
+<!-- 左右选择图片 -->
+<div id="bgi-change">
+  <div class="bgi-change" id="bgi-left-change"><img class="innerImg" src="./assets/web/icon/left.png" alt="" /></div>
+  <div class="bgi-change" id="bgi-right-change"><img class="innerImg" src="./assets/web/icon/left.png" alt="" /></div>
+</div>
+<!-- 右侧边链接 -->
+<div class="fold-placer"></div>
+<!-- 更改 -->
+<div id="edit-con" hidden>
+  <div id="edit-header">
+    更改网址细节
+  </div>
+  <button id="editclX"></button>
+  <div id="edit-inputs">
+    <div class="add-incon"><input type="text" class="addinp" placeholder="名称" maxlength="6" /></div>
+    <div class="add-incon"><input type="text" class="addinp" placeholder="网址" /></div>
+    <div class="add-incon"><input type="text" class="addinp" placeholder="图标(选填)" /></div>
+    <div class="add-incon"><input type="number" class="addinp" placeholder="大小(美观性用、选填)" min="60" max="100"
+        maxlength="3" /></div>
+  </div>
+  <div id="edit-confirm">更改</div>
+</div>
+<div id="hidden-element" hidden>
+  <!-- fold-link -->
+  <div class="fold-link">
+    <div class="fold-link-icon"></div>
+    <div class="fold-link-span">
+      <div class="fold-link-edit" hidden>も</div>
+      <div class="fold-link-delete" hidden>×</div>
+    </div>
+    <div class="fold-link-describe" hidden></div>
+  </div>
+  <!-- 链接方块 -->
+  <div class="short" onclick="">
+    <button class="hid-but" onclick=""></button>
+    <div class="inner-img"></div>
+    <div class="options" hidden>
+      <div class="edit">编辑</div>
+      <div class="delete">删除</div>
+    </div>
+    <div class="describe" hidden></div>
+  </div>
+  <!-- 背景缩略图 -->
+  <div class="single">
+    <button class="imgdelete" onclick="()=>{alert('adf')}"></button>
+    <img class="little" src="./assets/web/agaiheart" alt="">
+    <div class="imgcheck"></div>
+  </div>
+</div>
